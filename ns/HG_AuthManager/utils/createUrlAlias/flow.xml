@@ -96,8 +96,8 @@ restV2/HG_AuthManager:auth/verifyOtp</value>
   <DATA ENCODING="XMLValues" I18N="true">
 
 <Values version="2.0">
-  <value name="xml">registerUser
-loginUser
+  <value name="xml">signUp
+signIn
 getProfileInfo
 initiateOtp
 verifyOtp</value>

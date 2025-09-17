@@ -75,7 +75,8 @@
   <value name="xml">restV2/HG_AuthManager:auth/signup
 restV2/HG_AuthManager:auth/signin
 restV2/HG_AuthManager:auth/getProfileInfo
-restV2/HG_AuthManager:auth/initiateOtp</value>
+restV2/HG_AuthManager:auth/initiateOtp
+restV2/HG_AuthManager:auth/verifyOtp</value>
   <record name="type" javaclass="com.wm.util.Values">
     <value name="node_type">unknown</value>
     <value name="node_subtype">unknown</value>
@@ -98,7 +99,8 @@ restV2/HG_AuthManager:auth/initiateOtp</value>
   <value name="xml">registerUser
 loginUser
 getProfileInfo
-initiateOtp</value>
+initiateOtp
+verifyOtp</value>
   <record name="type" javaclass="com.wm.util.Values">
     <value name="node_type">unknown</value>
     <value name="node_subtype">unknown</value>
