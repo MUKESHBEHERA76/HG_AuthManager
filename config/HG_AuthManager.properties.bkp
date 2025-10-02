@@ -1,5 +1,5 @@
 #HG_AuthManager
-HG_AuthManager.jdbc.connection=HG_Connection.jdbc:postgres_dev
+HG_AuthManager.jdbc.connection=HG_Connection.jdbc:postgres_prod
 HG_AuthManager.admin.emailID=mukeshbehera76@gmail.com
 HG_AuthManager.source.registrationDate.format=yyyy-MM-dd HH:mm:ss.SSS
 HG_AuthManager.destination.registrationDate.format=dd-MMM-yyyy
