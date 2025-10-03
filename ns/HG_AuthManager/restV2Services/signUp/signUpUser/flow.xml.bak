@@ -1395,10 +1395,25 @@
 
 <INVOKE TIMEOUT="" SERVICE="HG_AuthManager.common:returnHttpResponse" VALIDATE-IN="$none" VALIDATE-OUT="$none">
   <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAP MODE="INPUT">
+</MAP>
 </INVOKE>
 
-<EXIT FROM="$flow" SIGNAL="FAILURE" FAILURE-MESSAGE="Throwing error to make the local transaction to rollback the transaction automatically">
+<BRANCH TIMEOUT="" SWITCH="/LocalPipelineAttributes/isSuccessFlag">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAP NAME="true" TIMEOUT="" MODE="STANDALONE">
+  <COMMENT>--Do nothing--</COMMENT>
+</MAP>
+
+<EXIT NAME="$default" FROM="$flow" SIGNAL="FAILURE" FAILURE-MESSAGE="Throwing error to make the local transaction to rollback the transaction automatically">
   <COMMENT></COMMENT>
 </EXIT>
+</BRANCH>
 </SEQUENCE>
 </FLOW>
